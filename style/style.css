@@ -1,0 +1,182 @@
+body{
+  background-color: hsl(235, 18%, 26%);
+  font-family: 'Roboto', sans-serif;
+} 
+ .attribution { 
+  font-size: 11px; 
+  text-align: center; }
+    
+  .attribution a { 
+    color: hsl(228, 77%, 78%); }
+
+.attribution{
+  color: aliceblue;
+}
+
+
+.row{
+  background-color: hsl(0, 0%, 100%);
+  
+  height: auto;
+}
+
+
+h1{
+  margin: 50px 30px 20px 50px;
+  font-size: 45px;
+  font-weight: 600;
+
+}
+
+.main-container{
+  width: 800px;
+  margin-top: 100px;
+}
+
+
+
+  .con2{
+    width:370px;
+     height: 490px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+     background-image: url(/images/illustration-sign-up-desktop.svg); 
+     background-size: cover;
+    
+  }
+
+
+.container{
+  width: fit-content;
+  border-radius: 50%;
+}
+
+p{
+ margin:50px 30px 10px 50px;
+ font-size: 16px;
+ /* letter-spacing: .8px; */
+ font-weight: 600;
+}
+
+
+ul{
+  margin:30px 10px 5px 10px;
+ font-size: 13px;
+ list-style-type: none;
+ padding-left: 40px;
+ font-weight: 600;
+}
+
+li{
+  background-image: url(/images/icon-list.svg);
+  background-repeat: no-repeat;
+  background-size: 16px 16px;
+  padding-left: 20px;
+  margin-bottom: 5px;
+  cursor: pointer;
+}
+
+.mail{
+  margin-top: 10px;
+  margin-left: 50px;
+  width: 80%;
+  
+  
+
+}
+
+div>span{
+font-size: 15px;
+font-weight: 600;
+  font-size: 12px;
+  
+}
+
+input{
+  width: 100%;
+  padding: 5px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+button{
+  
+ margin-left: 50px;
+  border: none;
+  width: 80%;
+  padding: 10px;
+  border-radius: 8px;
+  background-color: hsl(234, 29%, 20%);
+  color: hsl(0, 0%, 100%);
+  font-size: 14px;
+  font-weight: 600;
+ 
+}
+
+button:hover{
+  background: linear-gradient(to left, hsl(4, 94%, 67%),hsl(4, 100%, 67%));
+  color: aliceblue;
+  box-shadow: 0px 6px 8px rgba(243, 95, 95, 0.59);
+}
+
+@media (max-width: 768px) {
+  .main-container{
+    width: 400px;
+    height: auto;
+    
+  }
+
+  .con2{ 
+    
+     height: 276px; 
+    margin-top: 0;
+    margin-bottom: 0;
+    background-image: url(/images/illustration-sign-up-mobile.svg);
+    background-size: cover;
+    width: 400px;
+    border-bottom-left-radius: 25px;
+    border-bottom-right-radius: 25px;
+    
+   
+  }
+
+
+}
+
+.thanks-container{
+  background-color: hsl(0, 0%, 100%);
+  border-radius: 25px;
+  height: 400px;
+  width: 400px;
+  margin-top: 100px;
+}
+
+.congrats{
+  margin-left: 40px;
+  margin-top: 40px;
+}
+
+h2{
+  margin: 30px 30px 0 50px;
+  font-size: 40px;
+  font-weight: 600;
+}
+
+article{
+  margin:20px 30px 10px 50px;
+ font-size: 13px;
+ /* letter-spacing: .8px; */
+ 
+}
+
+  #message{
+  float:right;
+}
+  
+.invalid{
+  color: rgb(250, 76, 76);
+}
+
+.hidden{
+  display: none;
+}

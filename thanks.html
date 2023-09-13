@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="bootstrap-5.3.0-dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="style/style.css">
+</head>
+<body>
+
+  <div class="container">
+
+  <div class="thanks-container">
+
+    <img src="/images/icon-success.svg" alt="" class="congrats">
+   
+      
+  <div>
+    <h2>
+      Thanks for subscribing!
+    </h2>
+  </div>
+
+<div>
+ <article id="message">
+  
+  A confirmation email has been sent to <b>ash@loremcompany.com</b>. 
+  Please open it and click the button inside to confirm your subscription.
+ </article>
+  
+  
+</div>
+ 
+<button class="mt-3" id="dismissButton">
+  Dismiss message
+</button>
+ 
+    </div>
+
+  </div>
+
+  
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Ogbo Victor</a>.
+  </div>
+  <script>
+    // Get the email parameter from the URL
+const urlParams = new URLSearchParams(window.location.search);
+const email = urlParams.get("email");
+
+// Update the message with the retrieved email
+const messageElement = document.getElementById("message");
+if (email) {
+    const emailText = `<b>${email}</b>`;
+    messageElement.innerHTML = `A confirmation email has been sent to ${emailText}. Please open it and click the button inside to confirm your subscription.`;
+
+
+// Get the "Dismiss" button element
+const dismissButton = document.getElementById("dismissButton");
+
+// Function to handle the button click and redirect
+function handleDismiss() {
+  // Redirect to the home page (replace "home.html" with the actual home page URL)
+  window.location.href = "index.html";
+}
+
+// Add a click event listener to the "Dismiss" button
+dismissButton.addEventListener("click", handleDismiss);
+
+// Add a key event listener to the entire document
+document.addEventListener("keydown", function (event) {
+  // Check if the Enter key (key code 13) is pressed
+  if (event.keyCode === 13) {
+    // Trigger the "Dismiss" button click event
+    handleDismiss();
+  }
+});
+
+}
+
+  </script>
+  <script src="/script/script.js"></script>
+  
+</body>
+</html>
